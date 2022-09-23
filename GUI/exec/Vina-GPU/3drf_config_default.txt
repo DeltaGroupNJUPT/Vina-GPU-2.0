@@ -1,0 +1,10 @@
+out = C:/Users/student/Desktop/Dingji
+size_x = 30
+size_y = 30
+size_z = 30
+thread = 1000
+receptor = C:/Users/student/Desktop/Dingji/re/2bm2_protein.pdbqt
+ligand_directory = C:/Users/student/Desktop/Dingji/li
+center_x = 10
+center_y = -10
+center_z = 10

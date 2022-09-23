@@ -1,0 +1,8 @@
+size_x = 24
+size_y = 26.25
+size_z = 22.5
+receptor = C:/Users/20491/Desktop/ceshi/Receptor/4er4_protein.pdbqt
+center_x = 26
+center_y = 45
+center_z = 44
+ligand = C:/Users/20491/Desktop/ceshi/Ligand/drugbank6.pdbqt

@@ -1,0 +1,2 @@
+GPU mento carlo runtime = 0.176508s
+GPU total runtime = 1.485s
