@@ -32,7 +32,7 @@ Note: ensure the line ending are CLRF
 |--|--|--|
 |--config | the config file (in .txt format) that contains all the following arguments for the convenience of use| no default
 | --receptor | the recrptor file (in .pdbqt format)| no default
-|--ligand_directory| this path contains all the ligand files，the ligand file (in .pdbqt fotmat)| no default
+|--ligand_directory| this path contains all the ligand files，the ligand file (in .pdbqt format)| no default
 |--thread| the scale of parallelism (docking lanes)|1000
 |--search_depth| the number of searching iterations in each docking lane| heuristically determined
 |--center_x/y/z|the center of searching box in the receptor|no default
