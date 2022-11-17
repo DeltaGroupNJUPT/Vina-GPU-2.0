@@ -3,6 +3,7 @@ Vina-GPU 2.0 accelerates AutoDock Vina and its related commonly derived docking 
 Vina-GPU 2.0 includes the following three docking methods,including Vina-GPU+,QuickVina 2-GPU and QuickVina-W-GPU.
 
 ## Vina-GPU+
+Vina-GPU+ further accelerates Vina-GPU and facilitates single receptor-multi-ligand docking.
 The compile and run process is described in [here](https://github.com/DeltaGroupNJUPT/Vina-GPU-2.0/tree/main/Vina-GPU%2B).
 
 If you would like to develop and build Vina-GPU+ from source please look at README.md(https://github.com/DeltaGroupNJUPT/Vina-GPU-2.0/blob/main/Vina-GPU%2B/README.md).
