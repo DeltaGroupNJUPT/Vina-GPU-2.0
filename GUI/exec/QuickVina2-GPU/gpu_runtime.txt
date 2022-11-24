@@ -1,2 +1,2 @@
-GPU monte carlo runtime=0.103208s
-GPU total runtime=0.372 s
+GPU monte carlo runtime=0.106919s
+GPU total runtime=7.481 s

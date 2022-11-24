@@ -1,8 +1,9 @@
-size_x = 24
-size_y = 26.25
-size_z = 22.5
-receptor = C:/Users/20491/Desktop/ceshi/Receptor/4er4_protein.pdbqt
-center_x = 26
-center_y = 45
-center_z = 44
-ligand = C:/Users/20491/Desktop/ceshi/Ligand/drugbank6.pdbqt
+out = C:/Users/vv335/Desktop/V/GUI-OUT
+size_x = 30
+size_y = 30
+size_z = 30
+receptor = C:/Users/vv335/Desktop/V/in/2bm2_protein.pdbqt
+center_x = 25
+center_y = 25
+center_z = 25
+ligand = C:/Users/vv335/Desktop/V/in1/drugbank5.pdbqt

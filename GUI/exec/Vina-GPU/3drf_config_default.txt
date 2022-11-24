@@ -1,10 +1,10 @@
-out = C:/Users/student/Desktop/Dingji
+out = C:/Users/vv335/Desktop/V/GUI-OUT
 size_x = 30
 size_y = 30
 size_z = 30
 thread = 1000
-receptor = C:/Users/student/Desktop/Dingji/re/2bm2_protein.pdbqt
-ligand_directory = C:/Users/student/Desktop/Dingji/li
-center_x = 10
-center_y = -10
-center_z = 10
+receptor = C:/Users/vv335/Desktop/V/in/2bm2_protein.pdbqt
+ligand_directory = C:/Users/vv335/Desktop/V/in1
+center_x = 25
+center_y = 25
+center_z = 25
