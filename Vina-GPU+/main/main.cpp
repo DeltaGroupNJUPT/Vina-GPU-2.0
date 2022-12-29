@@ -44,7 +44,7 @@
 #include "tee.h"
 #include "coords.h" // add_to_output_container
 #include "main_procedure_cl.h"
-#include <filesystem>
+#include <experimental/filesystem>
 
 using boost::filesystem::path;
 
@@ -788,8 +788,8 @@ Thank you!\n";
 			else
 				out_dir = ligand_directory + "_out";
 
-			std::filesystem::create_directory(out_dir);
-			for (const auto& entry : std::filesystem::directory_iterator(ligand_directory)) {
+			std::experimental::filesystem::create_directory(out_dir);
+			for (const auto& entry : std::experimental::filesystem::directory_iterator(ligand_directory)) {
 				std::vector<std::string> tmp = { entry.path().string() };
 				ligand_names.push_back(tmp);
 				std::string delimiter1 = ".pdbqt";
