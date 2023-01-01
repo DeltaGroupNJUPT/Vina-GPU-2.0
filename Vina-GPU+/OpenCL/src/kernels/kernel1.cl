@@ -36,7 +36,7 @@ float eval_fast(int type_pair_index, float r2, float cutoff_sqr, const __global 
 	return res;
 }
 
-const __global int* __private possibilities(						float*		coords,
+const __global int* possibilities(						float*		coords,
 												const	__global	ar_cl*		ar,
 												const				float		epsilon_fl, 
 												const	__global	gb_cl*		gb,
