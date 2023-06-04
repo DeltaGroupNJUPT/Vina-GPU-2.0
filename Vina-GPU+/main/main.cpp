@@ -375,7 +375,10 @@ void main_procedure(std::vector<model>& ms, const boost::optional<model>& ref, /
 			// the order must not change because of non-decreasing g (see paper), but we'll re-sort in case g is non strictly increasing
 			out_cont.sort();
 		}
-
+		else{
+			std::cout << std::endl << "No results found for ligand " << name_tmp2 << std::endl << std::endl;
+			continue;
+		}
 		const fl out_min_rmsd = 1;
 		out_cont = remove_redundant(out_cont, out_min_rmsd);
 
@@ -811,14 +814,21 @@ Thank you!\n";
 		doing(verbosity, "Reading input", log);
 		std::vector<model> ms;
 		for (int i = 0; i < ligand_names.size(); i++) {
-			ms.push_back(parse_bundle(rigid_name_opt, flex_name_opt, ligand_names[i]));
-			//if (i == 1108) {
-			//	int aa;
-			//}
+			try {
+				ms.push_back(parse_bundle(rigid_name_opt, flex_name_opt, ligand_names[i]));
+			}
+			catch (parse_error& e) {
+				std::cerr << "\nParse error on line " << e.line << " in file \"" << e.file.string() << "\": " << e.reason << '\n';
+				continue;
+			}
 		}
 
 		boost::optional<model> ref;
 		done(verbosity, log);
+		if (ms.size() == 0) {
+			std::cerr << "No valid ligands in the input directory\n";
+			return 1;
+		}
 		
 		main_procedure(ms, ref,
 			out_names,
