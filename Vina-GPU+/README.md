@@ -44,8 +44,8 @@ A graphic user interface (GUI) is also provided for Windows users, please check 
     |  OPENCL_VERSION | -DOPENCL_3_0 / -OPENCL_2_0|OpenCL version 3.0 / 2.0
     
 5. type `make clean` and `make source` to build Vina-GPU+ that compile the kernel files on the fly (this would take some time at the first use)
-7. after a successful compiling, `Vina-GPU+` can be seen in the directory 
-8. type `./Vina-GPU+ --config ./input_file_example/2bm2_config.txt` to run Vina-GPU+
+7. after a successful compiling, `Vina-GPU` can be seen in the directory 
+8. type `./Vina-GPU --config ./input_file_example/2bm2_config.txt` to run Vina-GPU+
 9. once you successfully run Vina-GPU+, its runtime can be further reduced by typing `make clean` and `make` to build it without compiling kernel files (but make sure the `Kernel1_Opt.bin` file and `Kernel2_Opt.bin` file is **unchanged**)
 10. other compile options: 
   
