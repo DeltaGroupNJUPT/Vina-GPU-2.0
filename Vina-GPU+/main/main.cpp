@@ -813,9 +813,12 @@ Thank you!\n";
 
 		doing(verbosity, "Reading input", log);
 		std::vector<model> ms;
+		std::vector<std::string> out_names_valid;
+
 		for (int i = 0; i < ligand_names.size(); i++) {
 			try {
 				ms.push_back(parse_bundle(rigid_name_opt, flex_name_opt, ligand_names[i]));
+				out_names_valid.push_back(out_names[i]);
 			}
 			catch (parse_error& e) {
 				std::cerr << "\nParse error on line " << e.line << " in file \"" << e.file.string() << "\": " << e.reason << '\n';
@@ -831,7 +834,7 @@ Thank you!\n";
 		}
 		
 		main_procedure(ms, ref,
-			out_names,
+			out_names_valid,
 			score_only, local_only, randomize_only, false, // no_cache == false
 			gd, exhaustiveness,
 			weights,
