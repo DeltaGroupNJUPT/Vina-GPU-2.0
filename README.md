@@ -1,5 +1,6 @@
 # Vina-GPU 2.0
 [NEWS] We have released [Vina-GPU 2.1](https://github.com/DeltaGroupNJUPT/Vina-GPU-2.1), which provides more speed targeting on virtual screening!
+
 Vina-GPU 2.0 accelerates AutoDock Vina and its related commonly derived docking methods, such as QuickVina 2 and QuickVina-W with GPUs.
 Vina-GPU 2.0 includes the following three docking methods,including Vina-GPU+,QuickVina 2-GPU and QuickVina-W-GPU.
 
